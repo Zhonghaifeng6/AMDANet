@@ -13,22 +13,22 @@ AMDANet reallocates weights to reduce the saliency of discrepant features and ut
 * Prepare training data & set the training parameters:<br>
   * Dataset fomula:
   * Dataset name<br>
-    ------RGB folder<br>
-    ------THE folder<br>
-    ------Label folder<br>
-    ------train.txt<br>
-    ------val.txt<br>
-    ------test.txt<br>
+    ------RGB image folder<br>
+    ------Infrared image folder<br>
+    ------Ground truth folder<br>
+    ------Train.txt<br>
+    ------Val.txt<br>
+    ------Test.txt<br>
 * Datasets can be found at here: [FMB](https://github.com/JinyuanLiu-CV/SegMiF), [MFNet](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral), [PST900](https://github.com/ShreyasSkandanS/pst900_thermal_rgb).```<br>
 * Run ```CUDA_VISIBLE_DEVICES="GPU IDs" python -m torch.distributed.launch --nproc_per_node="GPU numbers you want to use" train.py```<br>
-* Example ```CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 train.py```<br>
+* Example ```CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node train.py```<br>
 
 
 # Test:<br>
 * Pretrained weights can be found at here: [FMB](https://drive.google.com/drive/folders/17LroKnuEWttvtcbuv-G-DXaXYdua52cN?usp=sharing), [MFNet](https://drive.google.com/drive/folders/1txDn-U04KEKA6gbSUjSsn-QqaN4nFw0Y?usp=sharing), [PST900](https://drive.google.com/drive/folders/1iEu3QZSV-q18u28X4cB7GK8UpLoRhXTX?usp=sharing), place the checkpoints under the corrspanding floder.
 * Set the testing parameters:<br>
 * Run ```CUDA_VISIBLE_DEVICES="GPU IDs" python eval.py -e="epoch"```<br>
-* Example ```CUDA_VISIBLE_DEVICES=0 python eval.py -e=MRFS```<br>
+* Example ```CUDA_VISIBLE_DEVICES=0 python eval.py -e=AMDANet```<br>
 
 
 ## Recommended Requirements
