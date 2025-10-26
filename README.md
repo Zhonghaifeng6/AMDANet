@@ -5,7 +5,7 @@ The code of AMDANet: Attention-Driven Multi-Perspective Discrepancy Alignment fo
 In this work, to achieve precise multimodal semantic segmentation, we propose an Attention-Driven Multimodal Discrepancy Alignment Network (AMDANet). 
 AMDANet reallocates weights to reduce the saliency of discrepant features and utilizes low-weight features as cues to mitigate discrepancies between modalities, thereby achieving multimodal feature alignment. 
 <p align="center">
-<img src="./docs/pipline.jpg" width=85% height=85% class="center">
+<img src="./docs/pipline.jpg" width=70% height=70% class="center">
 </p>
 
 
