@@ -5,7 +5,7 @@ The code of MRFS : Mutually Reinforcing Image Fusion and Segmentation.
 In this work, we found that existing traditional scene perception methods are ineffective for garment perception in low-light environments.
 Our DarkSeg model learns illumination-invariant structural representations from infrared images, enabling accurate detection and classification of garment and facilitating robotic grasping in low-light environments.
 <p align="center">
-<img src="./docs/pipline.png" width=85% height=85% class="center">
+<img src="./docs/pipline.jpg" width=85% height=85% class="center">
 </p>
 
 
