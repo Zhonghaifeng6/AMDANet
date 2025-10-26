@@ -1,9 +1,9 @@
 # AMDANet_ICCV 2025
-The code of MRFS : Mutually Reinforcing Image Fusion and Segmentation.
+The code of AMDANet: Attention-Driven Multi-Perspective Discrepancy Alignment for RGB-Infrared Image Fusion and Segmentation
 
 ## 💥 Motivation
-In this work, we found that existing traditional scene perception methods are ineffective for garment perception in low-light environments.
-Our DarkSeg model learns illumination-invariant structural representations from infrared images, enabling accurate detection and classification of garment and facilitating robotic grasping in low-light environments.
+In this work, to achieve precise multimodal semantic segmentation, we propose an Attention-Driven Multimodal Discrepancy Alignment Network (AMDANet). 
+AMDANet reallocates weights to reduce the saliency of discrepant features and utilizes low-weight features as cues to mitigate discrepancies between modalities, thereby achieving multimodal feature alignment. 
 <p align="center">
 <img src="./docs/pipline.jpg" width=85% height=85% class="center">
 </p>
@@ -33,27 +33,28 @@ Our DarkSeg model learns illumination-invariant structural representations from 
 ## Recommended Requirements
 
 ```
- - [ ] python = 3.8
- - [ ] torch = 1.8.1+cu111
- - [ ] timm = 0.9.8
- - [ ] numpy = 1.24.4
- - [ ] scipy = 1.10.1
- - [ ] pillow = 10.1.0
- - [ ] tqdm = 4.66.1
- - [ ] tensorboardX = 2.6.2.2
- - [ ] opencv-python = 4.8.1.78
+ - python = 3.8
+ - torch = 1.8.1+cu111
+ - timm = 0.9.8
+ - numpy = 1.24.4
+ - scipy = 1.10.1
+ - pillow = 10.1.0
+ - tqdm = 4.66.1
+ - tensorboardX = 2.6.2.2
+ - opencv-python = 4.8.1.78
 ```
 
 
 ## Acknowlegement
-_**DarkSeg**_ is built upon [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
+_**AMDANet**_ is built upon [SegFormer](https://github.com/NVlabs/SegFormer), [MRFS](https://github.com/HaoZhang1018/MRFS) and [SegMiF](https://github.com/JinyuanLiu-CV/SegMiF). We thank their authors for making the source code publicly available.
 
 ````
-@inproceedings{zhang2024mrfs,
-  title={MRFS: Mutually Reinforcing Image Fusion and Segmentation},
-  author={Zhang, Hao and Zuo, Xuhui and Jiang, Jie and Guo, Chunchao and Ma, Jiayi},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={26974--26983},
-  year={2024}
+@InProceedings{Zhong_2025_ICCV,
+    author    = {Zhong, Haifeng and Tang, Fan and Chen, Zhuo and Chang, Hyung Jin and Gao, Yixing},
+    title     = {AMDANet: Attention-Driven Multi-Perspective Discrepancy Alignment for RGB-Infrared Image Fusion and Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {10645-10655}
 }
 ````
