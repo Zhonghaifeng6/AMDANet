@@ -44,6 +44,10 @@ Our DarkSeg model learns illumination-invariant structural representations from 
  - [ ] opencv-python = 4.8.1.78
 ```
 
+
+## Acknowlegement
+_**DarkSeg**_ is built upon [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
+
 ````
 @inproceedings{zhang2024mrfs,
   title={MRFS: Mutually Reinforcing Image Fusion and Segmentation},
@@ -53,6 +57,3 @@ Our DarkSeg model learns illumination-invariant structural representations from 
   year={2024}
 }
 ````
-
-## Acknowlegement
-_**DarkSeg**_ is built upon [SegFormer](https://github.com/NVlabs/SegFormer). We thank their authors for making the source code publicly available.
