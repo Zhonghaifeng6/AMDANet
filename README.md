@@ -19,7 +19,7 @@ AMDANet reallocates weights to reduce the saliency of discrepant features and ut
     ------Train.txt<br>
     ------Val.txt<br>
     ------Test.txt<br>
-* Datasets can be found at here: [FMB](https://github.com/JinyuanLiu-CV/SegMiF), [MFNet](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral), [PST900](https://github.com/ShreyasSkandanS/pst900_thermal_rgb).```<br>
+* Datasets can be found at here: [FMB](https://drive.google.com/file/d/1YvxxEjxmd0k49ReyC4PaAWcuhuOmn8Z1/view?usp=sharing), [MFNet](https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral), [PST900](https://drive.google.com/file/d/1dEULc25OP6fl1FXuUXiEkHSYfDkFcUjv/view?usp=sharing).```<br>
 * Run ```CUDA_VISIBLE_DEVICES="GPU IDs" python -m torch.distributed.launch --nproc_per_node="GPU numbers you want to use" train.py```<br>
 * Example ```CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node train.py```<br>
 
