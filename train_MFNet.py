@@ -38,7 +38,7 @@ parser.add_argument('--num_classes', default=9, type=int, help='')
 parser.add_argument('--class_names',
                     default=['unlabeled', 'car', 'person', 'bike', 'curve', 'car_stop', 'guardrail', 'color_cone', 'bump'],
                     type=list, help='the class names of all classes')
-parser.add_argument('--num_train_imgs', default=1177, type=int, help='')
+parser.add_argument('--num_train_imgs', default=784, type=int, help='')
 parser.add_argument('--num_eval_imgs', default=393, type=int, help='')
 # Image Config
 parser.add_argument('--image_height', default=480, type=int, help='the height of image size to train')
